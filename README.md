@@ -9,7 +9,8 @@ Sensor-based systems in self-driving cars utilize camera feeds to make decisions
 
 This pipeline can be reused for image processing in general, as modules that are built for image processing, including the small linear algebra framework for image feature extraction task and the process parallelization with CUDA framework. The modules can be used for an existing system where real time camera feeds are being serialized by a microcontroller, and the serialized information can be used for segmentation task down the line. The architecture includes the following:
 ### Custom library built for operations with linear algebra in C++
-In this module, we will work with data structures that make linear algebra computations abstracted for general, high-level application/use case.
+In this module, we will work with data structures that make linear algebra computations abstracted for general, high-level application/use case. We will use multiple image filters extract features for further processing. The approach for these implementations is not to reinvent the wheel. Most of these mathematical models and filters have been created and modified years ago, but their applications still exist. The concept of abstracting these filters for more streamline use will be the priority of these modules. The custom math library for example, takes simple, yet important concepts in linear algebra and condenses them into classes and structs that can be modified for ease of integration with estimators like recursive least squares, or image filters like the convolution.
+
 
 ### Filters Directory
 Depending on the task, different filters may be more useful for feature extraction, the most common will be provided.
