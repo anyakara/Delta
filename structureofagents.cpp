@@ -25,3 +25,8 @@ Action tableDrivenAgent(Percept percept) {
   // action = Lookup(percepts, table);
   return action;
 }
+
+
+// Computationally expensive because of the requirement to remember all the previous percepts.
+// Gives an idea of why theory of complexity of algorithms is important when extrapolating these solutions to a larger
+// more complex robotic task
