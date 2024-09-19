@@ -1,5 +1,6 @@
 #include <vector>
 #include <string>
+#include <pair>
 
 class Percept() {
   
@@ -30,3 +31,30 @@ Action tableDrivenAgent(Percept percept) {
 // Computationally expensive because of the requirement to remember all the previous percepts.
 // Gives an idea of why theory of complexity of algorithms is important when extrapolating these solutions to a larger
 // more complex robotic task
+
+
+// -----------------------------------------------------------------------------------------------------------------
+
+std::vector<Action> actionLookupTable;
+
+void suckDirt() {
+}
+
+void moveRight() {
+}
+
+void moveLeft() {
+}
+
+void reflexVacuumAgent(std::pair<int, std::string> stateEstimate) {
+  // Corresponds to which square on the grid needs to be cleaned -- or relative position marking
+  if (stateEstimate.second == "dirty") { return suckDirt() }
+  else if (stateEstimate.first == "1") { return moveRight() }
+  else if (stateEstimate.first == "2") { return moveLeft() }
+}
+
+
+
+
+
+
