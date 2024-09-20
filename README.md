@@ -2,4 +2,4 @@
 * Regarding recent developments
   * Concept of perception stack
   * Concept of natural language
-  * Development of Natural ROS - utilizing rules of ROS development and natural language processing techniques & semantic search
+  * Development of {natural} ROS - utilizing rules of ROS development and natural language processing techniques & semantic search
