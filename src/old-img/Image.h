@@ -1,8 +1,5 @@
-
-
 struct Image {
-
-    uint8_t* data = nullptr;
+    uint8_t * data = nullptr;
     size_t size = 0;
     int w;
     int h;
@@ -17,4 +14,3 @@ struct Image {
     bool write(const char* filename);
 
 }
-
