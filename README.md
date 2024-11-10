@@ -6,10 +6,10 @@
 Delta is a high-performance C++ pipeline designed for real-time sensor data processing and AI model inference using ONNX Runtime and TensorRT. It's ideal for applications that require processing multiple sensor inputs (such as LiDAR, radar, and camera data) in autonomous systems, with a focus on low latency and high efficiency.
 
 ## Features
-__Multi-Sensor Data Processing:__ handles data from sensors for sensor fusion (i.e. radar, LiDAR, IMU, GYRO, camera) task. Combines the encodings for a unified input for AI models.
-__Real-Time Inference:__ leverages ONNX Runtime and TensorRT for optimized model execution on CPU and GPU.
-__Design:__ built heavily templated at it's core, enhancing only features that can be adapted to the sensor being used with appropriate data to store.
-__Data Preprocessing and Post-Processing:__ includes modules for data normalization, batching, and output interpretation. Concepts implemented for real-time embedded systems analysis.
+* __Multi-Sensor Data Processing:__ handles data from sensors for sensor fusion (i.e. radar, LiDAR, IMU, GYRO, camera) task. Combines the encodings for a unified input for AI models.
+* __Real-Time Inference:__ leverages ONNX Runtime and TensorRT for optimized model execution on CPU and GPU.
+* __Design:__ built heavily templated at it's core, enhancing only features that can be adapted to the sensor being used with appropriate data to store.
+* __Data Preprocessing and Post-Processing:__ includes modules for data normalization, batching, and output interpretation. Concepts implemented for real-time embedded systems analysis.
 
 ## Prerequsites
 * C++17 or higher
@@ -42,19 +42,19 @@ In summary, Delta allows systems engineers to process and run inference on senso
 
 ### Code High Level Overview
 The stack comprises of the following main components.
-__SensorData:__ defines structures and methods for acquiring and preprocessing data from sensors.
-__InferenceEngine:__ loads AI model and runs inference using ONNX Runtime or TensorRT.
-__FusionModule:__ combines data from multiple sensors and applies filter models (provided in filters stack) or other fusion methods.
-__TasksScheduler+:__ uses OS processes to manage task execution priority, ensuring real-time performance.
+* __SensorData:__ defines structures and methods for acquiring and preprocessing data from sensors.
+* __InferenceEngine:__ loads AI model and runs inference using ONNX Runtime or TensorRT.
+* __FusionModule:__ combines data from multiple sensors and applies filter models (provided in filters stack) or other fusion methods.
+* __TasksScheduler+:__ uses OS processes to manage task execution priority, ensuring real-time performance.
 
 ### Configuration
 Edit configuration settings in `config.yml` to specify paths for models, set GPU options, change sensor data parameters.
 
 ## Performance Optimization
 To achieve higher performance, Delta can be configured to:
-__Enable CUDA Support__ in ONNX Runtime and TensorRT and GPU inference.
-__Adjust batch sizes__ and input shapes for specified models to improve throughput.
-__Utilize priority scheduling__ to maintain real-time performance for high-priority tasks.
+* __Enable CUDA Support__ in ONNX Runtime and TensorRT and GPU inference.
+* __Adjust batch sizes__ and input shapes for specified models to improve throughput.
+* __Utilize priority scheduling__ to maintain real-time performance for high-priority tasks.
 
 ## Contributing
 Contributions are welcome! Please create an issue or pull request if you have suggestions or improvements.
