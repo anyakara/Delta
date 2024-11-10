@@ -1,6 +1,6 @@
 # Delta
 ![image](https://github.com/user-attachments/assets/7752fa2a-d8eb-4916-a07b-9c416b748f6c)
-From NVIDIA DRIVE AGX Hyperion (very cool image)
+(Adopted image from NVIDIA DRIVE AGX Hyperion)
 
 ## Perception Stack for the Modern Autonomous Agent
 Delta is a high-performance C++ pipeline designed for real-time sensor data processing and AI model inference using ONNX Runtime and TensorRT. It's ideal for applications that require processing multiple sensor inputs (such as LiDAR, radar, and camera data) in autonomous systems, with a focus on low latency and high efficiency.
@@ -32,3 +32,32 @@ cmake ..
 make
 ```
 ## Usage
+### Running Inference on Sensor Data
+In summary, Delta allows systems engineers to process and run inference on sensor data, such as LiDAR, radar, and camera inputs through a streamlined pipeline.
+1. Prepare sensor data: input data from sensors should be stored in compatible format (e.g. .bin or .csv).
+2. Run the application:
+```
+./delta path/to/sensor_data_file
+```
+
+### Code High Level Overview
+The stack comprises of the following main components.
+__SensorData:__ defines structures and methods for acquiring and preprocessing data from sensors.
+__InferenceEngine:__ loads AI model and runs inference using ONNX Runtime or TensorRT.
+__FusionModule:__ combines data from multiple sensors and applies filter models (provided in filters stack) or other fusion methods.
+__TasksScheduler+:__ uses OS processes to manage task execution priority, ensuring real-time performance.
+
+### Configuration
+Edit configuration settings in `config.yml` to specify paths for models, set GPU options, change sensor data parameters.
+
+## Performance Optimization
+To achieve higher performance, Delta can be configured to:
+__Enable CUDA Support__ in ONNX Runtime and TensorRT and GPU inference.
+__Adjust batch sizes__ and input shapes for specified models to improve throughput.
+__Utilize priority scheduling__ to maintain real-time performance for high-priority tasks.
+
+## Contributing
+Contributions are welcome! Please create an issue or pull request if you have suggestions or improvements.
+
+## License
+This project is licensed under the MIT License. See LICENSE for details.
