@@ -5,6 +5,8 @@
 ## Perception Stack for the Modern Autonomous Agent
 Delta is a high-performance C++ pipeline designed for real-time sensor data processing and AI model inference using ONNX Runtime and TensorRT. It's ideal for applications that require processing multiple sensor inputs (such as LiDAR, radar, and camera data) in autonomous systems, with a focus on low latency and high efficiency.
 
+Originally, was to be incorporated into EV racecar at university, was offered the resources to execute but team had different requirements, thus decided to write the high-level stack that in theory would be applicable to an autonomous EV. After assisting my seniors in remapping the entire car with a new Hercules board, I learned valuable information regarding the car's layout and optimal sensor placement. Additionally, asked the team lead and professor about the inclusion of AI to process the car's sensor data to be displayed on the dash, but that plan was dropped. This stack reflects my understanding of the components required to build an optimal EV perception stack.
+
 ## Features
 * __Multi-Sensor Data Processing:__ handles data from sensors for sensor fusion (i.e. radar, LiDAR, IMU, GYRO, camera) task. Combines the encodings for a unified input for AI models.
 * __Real-Time Inference:__ leverages ONNX Runtime and TensorRT for optimized model execution on CPU and GPU.
