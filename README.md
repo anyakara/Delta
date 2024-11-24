@@ -41,7 +41,7 @@ In summary, Delta allows systems engineers to process and run inference on senso
 ```
 ./delta path/to/sensor_data_file
 ```
-<img width="1225" alt="Screenshot 2024-11-23 at 12 06 40 PM" src="https://github.com/user-attachments/assets/b5cb1db9-c443-46b5-be6d-fe03e80aa655">
+<img width="1304" alt="Screenshot 2024-11-24 at 10 26 56 AM" src="https://github.com/user-attachments/assets/1a0325f9-48da-4ddb-ad50-2a7e90d045f5">
 
 
 ### Code High Level Overview
