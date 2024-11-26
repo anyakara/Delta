@@ -1,5 +1,6 @@
 # Delta
-<img width="1422" alt="Screenshot 2024-11-24 at 10 43 15 PM" src="https://github.com/user-attachments/assets/fd4d5ce1-b4d6-4b27-9d23-b7ea2263d6e2">
+<img width="1412" alt="Screenshot 2024-11-26 at 10 22 54 AM" src="https://github.com/user-attachments/assets/25f44702-d522-4051-b6ad-6e1d5730eac7">
+
 
 ![image](https://github.com/user-attachments/assets/7752fa2a-d8eb-4916-a07b-9c416b748f6c)
 (Adopted image from NVIDIA DRIVE AGX Hyperion)
