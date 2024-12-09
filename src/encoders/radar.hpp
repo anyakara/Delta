@@ -75,7 +75,7 @@ class RadarSignalProcessor {
         }
 
         float estimateVelocity(const RawRadarData& rawData) {
-            return static_cast<float>(rawData.adc_values[0]) / 500.0f;
+            return static_cast<float>(rawData.adc_values[0]) / 500.0f; // this is weak typing is not good for engineering ..
         }
 };
 
@@ -104,3 +104,7 @@ int main() {
     std::cout << "Encoded Radar Data: " << encodedData << std::endl;
     return 0;
 }
+
+// Noise attenuation for programming circuits 
+// prepare for autonomous systems engineering -- bistable circuit
+//
