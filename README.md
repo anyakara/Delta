@@ -1,8 +1,4 @@
 # Delta
-<img width="1378" alt="Screenshot 2024-11-28 at 11 55 55 AM" src="https://github.com/user-attachments/assets/c4ad52b1-c997-4d74-bc35-009a93d9f6c4">
-
-![image](https://github.com/user-attachments/assets/7752fa2a-d8eb-4916-a07b-9c416b748f6c)
-(Adopted image from NVIDIA DRIVE AGX Hyperion)
 
 ## Perception Stack for the Modern Autonomous Agent
 Delta is a high-performance C++ pipeline designed for real-time sensor data processing and AI model inference using ONNX Runtime and TensorRT. It's ideal for applications that require processing multiple sensor inputs (such as LiDAR, radar, and camera data) in autonomous systems, with a focus on low latency and high efficiency.
